@@ -19,11 +19,12 @@ const Uploader = () => {
   };
 
   const handleChangeTitle = (event:any) => {
-    setTitle(event.value);
+    setTitle(event.target.value);
+    console.log(event.target.value);
   }
 
   const handleChangeDescription = (event:any) => {
-    setDescription(event.value);
+    setDescription(event.target.value);
   }
 
   const handleSubmit = async (files:any) => {
