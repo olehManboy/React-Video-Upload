@@ -44,14 +44,14 @@ const Uploader = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form">
-      <label className="flex justify-between flex-col">
+    <form onSubmit={handleSubmit} className="form bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <label className="flex justify-between flex-col block text-gray-500 font-bold mb-1 md:mb-0">
         title:
-        <input type="text" onChange={handleChangeTitle}/>
+        <input type="text" onChange={handleChangeTitle} className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"/>
       </label>
-      <label className="flex justify-between flex-col">
+      <label className="flex justify-between flex-col block text-gray-500 font-bold mb-1 md:mb-0">
         description:
-        <textarea name="description" onChange={handleChangeDescription}/>
+        <textarea name="description" onChange={handleChangeDescription} className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"/>
       </label>
       <Dropzone
         onChangeStatus={handleChangeStatus}
@@ -61,7 +61,7 @@ const Uploader = () => {
         canCancel={false}
         inputContent="Drop A File"
       />
-      <input type="submit" value="Submit" />
+      <input className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit" value="Submit" />
     </form>
   );
 };
