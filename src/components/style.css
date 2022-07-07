@@ -1,0 +1,14 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.flex-col{
+    flex-direction: column;
+}
